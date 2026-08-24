@@ -1,0 +1,6 @@
+.DS_Store
+*.zip
+design-implementation-*.png
+design-qa.md
+vendor/
+node_modules/
