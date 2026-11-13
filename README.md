@@ -1,49 +1,78 @@
 # Descuento Global Woo
 
-Plugin reutilizable para programar un descuento global en una tienda WooCommerce sin modificar los precios guardados de los productos.
+Reusable plugin that schedules percentage discount campaigns for a WooCommerce store, store-wide or for selected categories, without changing the prices saved on products.
 
-## Funcionalidades
+## Features
 
-- Una campaña global con porcentaje entre `0,01 %` y `100 %`.
-- Inicio y finalización opcionales en la zona horaria de WordPress.
-- Activación manual y estados programada, activa, finalizada o deshabilitada.
-- Prevalencia temporal sobre ofertas existentes, con restauración automática.
-- Compatibilidad con productos simples, variables, carrito, checkout, HPOS y bloques.
-- Precio regular tachado e insignia porcentual personalizable desde el tema.
-- Interfaz administrativa con paleta Everforest.
-- Acción segura para limpiar toda la configuración.
+- A list of campaigns: create, edit, duplicate, delete and switch each one on or off.
+- Each campaign has a name and a percentage between `0.01 %` and `100 %`.
+- When several active campaigns include the same product, the biggest discount applies.
+- Applies to the whole store or to selected product categories (subcategories included), with optional excluded categories. Variations follow their parent product's categories.
+- Optional start and end dates in the WordPress timezone.
+- Manual switch plus scheduled, active, ended and disabled states.
+- Temporarily takes precedence over existing sale prices and restores them automatically.
+- Works with simple and variable products, cart, checkout, HPOS and WooCommerce blocks (Store API).
+- Campaign products join WooCommerce's on-sale list (`wc_get_product_ids_on_sale()`), so "On sale" queries work: the Bricks Query Loop "On sale" option, the On Sale Products block and `[sale_products]`.
+- Strikethrough regular price and a percentage badge (`-20%`). Themes and page builders such as Bricks usually render their own badge; developers can change the text with the `dgw_sale_badge_text` filter.
+- Purges the CloudPanel Varnish page cache when the campaign is saved, starts or ends.
+- Campaign list designed as a coupon booklet (status, schedule bar, on/off switch), in Mauricio Correa's palette.
+- Settings from version 1.2 are migrated automatically into the first campaign.
+- English source strings, with Spanish translations for `es_ES`, `es_CO` and `es_MX`.
 
-## Requisitos
+## Requirements
 
-- WordPress 6.9 o superior.
-- WooCommerce 11.0 o superior.
-- PHP 7.4 o superior.
+- WordPress 6.9 or later.
+- WooCommerce 11.0 or later.
+- PHP 7.4 or later.
 
-## Instalación
+## Installation
 
-1. Copia la carpeta `descuento-global-woo` dentro de `wp-content/plugins/`.
-2. Activa **Descuento Global Woo** desde el panel de plugins.
-3. Configura la campaña en **WooCommerce → Descuento global**.
+1. Copy the `descuento-global-woo` folder into `wp-content/plugins/`.
+2. Activate **Descuento Global Woo** from the Plugins screen.
+3. Create campaigns in **WooCommerce → Discount campaigns**.
 
-Si la fecha inicial queda vacía, la campaña comienza al guardarla. Si la fecha final queda vacía, permanece activa hasta que se deshabilite.
+If the start date is empty, the campaign starts as soon as it is on. If the end date is empty, it runs until it is turned off.
 
-## Extensibilidad
+## Page caching and scheduling
 
-El plugin expone los siguientes filtros:
+Prices are always calculated live, so the cart and checkout are correct the moment the campaign starts or ends. What needs to happen at that moment is clearing caches (WooCommerce price transients and the page cache).
 
-- `dgw_effective_percentage`
-- `dgw_product_is_eligible`
-- `dgw_sale_badge_text`
+The plugin does not depend on a server cron for that. It stores the last applied campaign status and compares it on every request that reaches PHP. Admin, cart, checkout and AJAX requests always bypass page caches, so the first of them after the start or end date clears the caches. WP-Cron events are also scheduled as a punctual nudge.
 
-Y las siguientes acciones:
+A real system cron is optional. It only makes the purge happen on time on sites with a full-page cache and very little traffic reaching PHP:
 
-- `dgw_campaign_started`
-- `dgw_campaign_ended`
+```
+wp --path=/path/to/site cron event run --due-now
+```
 
-## Licencia
+## Extensibility
+
+Filters:
+
+- `dgw_effective_percentage( $percentage, $product, $campaign )`
+- `dgw_product_is_eligible( $eligible, $product, $campaign )` (receives the result of the campaign's category rules)
+- `dgw_sale_badge_text( $text, $percentage, $product )`
+
+Actions:
+
+- `dgw_campaign_started( $campaign )`
+- `dgw_campaign_ended( $campaign )`
+- `dgw_purge_page_cache` (purge other page caches when prices change)
+
+## Translations
+
+Regenerate the template and compiled files after changing strings:
+
+```
+wp i18n make-pot . languages/descuento-global-woo.pot --exclude=languages,.git,.impeccable
+wp i18n make-mo languages
+wp i18n make-php languages
+```
+
+## License
 
 GPL-2.0-or-later.
 
-## Autor
+## Author
 
 [Mauricio Correa](https://maurouix.com/)

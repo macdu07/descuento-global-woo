@@ -39,14 +39,24 @@ final class DGW_Plugin {
 	 * Registers plugin services.
 	 */
 	private function __construct() {
-		load_plugin_textdomain( 'descuento-global-woo', false, dirname( plugin_basename( DGW_PLUGIN_FILE ) ) . '/languages' );
+		add_action( 'init', array( $this, 'load_textdomain' ) );
 
-		$this->campaign = new DGW_Campaign();
+		$store = new DGW_Campaign_Store();
+		$store->register_hooks();
+
+		$this->campaign = new DGW_Campaign( $store );
 		$this->campaign->register_hooks();
 
 		if ( is_admin() ) {
-			$admin = new DGW_Admin( $this->campaign );
+			$admin = new DGW_Admin( $store, $this->campaign );
 			$admin->register_hooks();
 		}
+	}
+
+	/**
+	 * Loads bundled translations once WordPress is ready for them.
+	 */
+	public function load_textdomain() {
+		load_plugin_textdomain( 'descuento-global-woo', false, dirname( plugin_basename( DGW_PLUGIN_FILE ) ) . '/languages' );
 	}
 }

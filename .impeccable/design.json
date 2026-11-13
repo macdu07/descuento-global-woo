@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T12:32:51+00:00",
+  "title": "Design System: Descuento Global Woo",
+  "extensions": {
+    "colorMeta": {
+      "cream": {
+        "role": "neutral",
+        "displayName": "CM-Cream",
+        "canonical": "oklch(96.6% 0.013 82.4)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#27241e",
+          "#433f39",
+          "#615d56",
+          "#817d75",
+          "#a29e96",
+          "#c7c4be",
+          "#efeeec"
+        ]
+      },
+      "turquoise": {
+        "role": "secondary",
+        "displayName": "CM-Turquoise",
+        "canonical": "oklch(68.0% 0.116 194.8)",
+        "tonalRamp": [
+          "#001315",
+          "#003032",
+          "#004f51",
+          "#007071",
+          "#009292",
+          "#2fb3b3",
+          "#82d5d4",
+          "#dbf5f4"
+        ]
+      },
+      "orange": {
+        "role": "tertiary",
+        "displayName": "CM-Orange",
+        "canonical": "oklch(70.4% 0.194 40.2)",
+        "tonalRamp": [
+          "#2f0000",
+          "#590000",
+          "#840000",
+          "#ae1c00",
+          "#d64400",
+          "#f86f3a",
+          "#ffa57f",
+          "#ffe5d8"
+        ]
+      },
+      "red": {
+        "role": "tertiary",
+        "displayName": "CM-Red",
+        "canonical": "oklch(62.3% 0.210 25.0)",
+        "tonalRamp": [
+          "#320000",
+          "#5e0000",
+          "#8a0000",
+          "#b50014",
+          "#df2f36",
+          "#ff605c",
+          "#ff9c93",
+          "#ffe3de"
+        ]
+      },
+      "gunmetal": {
+        "role": "primary",
+        "displayName": "CM-Gunmetal",
+        "canonical": "oklch(26.7% 0.022 245.9)",
+        "tonalRamp": [
+          "#060c11",
+          "#1d252c",
+          "#37414a",
+          "#545f69",
+          "#737f8a",
+          "#94a0ab",
+          "#bcc5ce",
+          "#eceff2"
+        ]
+      },
+      "gunmetal-hover": {
+        "role": "primary",
+        "displayName": "Lifted Gunmetal",
+        "canonical": "#2b3945"
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "#4f5b65"
+      },
+      "fog": {
+        "role": "neutral",
+        "displayName": "Fog",
+        "canonical": "#c9d0d5"
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder Grey",
+        "canonical": "#69717a"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#fffdf9"
+      },
+      "paper-ended": {
+        "role": "neutral",
+        "displayName": "Faded Paper",
+        "canonical": "#fbf8f2"
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "#ffffff"
+      },
+      "stub": {
+        "role": "neutral",
+        "displayName": "Stub Kraft",
+        "canonical": "#f1e9db"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Perforation Tan",
+        "canonical": "#e2d8c6"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Deep Tan",
+        "canonical": "#cfc3ae"
+      },
+      "switch-off": {
+        "role": "neutral",
+        "displayName": "Switch Off Taupe",
+        "canonical": "#8f8574"
+      },
+      "turquoise-text": {
+        "role": "secondary",
+        "displayName": "Deep Lagoon",
+        "canonical": "#00706f"
+      },
+      "turquoise-soft": {
+        "role": "secondary",
+        "displayName": "Lagoon Wash",
+        "canonical": "#dcf3f2"
+      },
+      "orange-text": {
+        "role": "tertiary",
+        "displayName": "Burnt Orange",
+        "canonical": "#ad4214"
+      },
+      "orange-soft": {
+        "role": "tertiary",
+        "displayName": "Apricot Wash",
+        "canonical": "#ffeadf"
+      },
+      "red-text": {
+        "role": "tertiary",
+        "displayName": "Brick",
+        "canonical": "#c0262a"
+      },
+      "red-soft": {
+        "role": "tertiary",
+        "displayName": "Blush",
+        "canonical": "#fde6e5"
+      },
+      "red-line": {
+        "role": "tertiary",
+        "displayName": "Blush Line",
+        "canonical": "#f5b5b4"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Editable percentage numeral in the editor stub and the blank empty-state coupon."
+      },
+      "display-list": {
+        "displayName": "Display List",
+        "purpose": "Percentage numeral on each coupon stub in the list; 28px at 960px and below."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page title in the gunmetal header."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Editor panel headings."
+      },
+      "title-row": {
+        "displayName": "Title Row",
+        "purpose": "Campaign name link on each coupon row."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, with tabular numerals."
+      },
+      "body-sm": {
+        "displayName": "Body Sm",
+        "purpose": "Hints, field help and relative time under the timeline."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase status stamps only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "switch-thumb",
+        "value": "0 1px 2px rgba(29, 39, 48, 0.3)",
+        "purpose": "Small lift under the switch thumb; the only shadow in use."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-change",
+        "value": "150ms ease-out",
+        "purpose": "Color, border and switch-thumb transitions only; removed under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wp-mobile",
+        "value": "782px"
+      },
+      {
+        "name": "booklet-stack",
+        "value": "960px"
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #1d2730; outline-offset: 2px",
+        "purpose": "All focus-visible states; cream on the gunmetal header."
+      },
+      {
+        "name": "input-focus",
+        "value": "border-color: #1d2730; box-shadow: 0 0 0 1px #1d2730",
+        "purpose": "Text inputs, selects and radios."
+      }
+    ],
+    "wpAdminTheme": {
+      "--wp-admin-theme-color": "#1d2730",
+      "--wp-admin-theme-color-darker-10": "#141b21",
+      "--wp-admin-theme-color-darker-20": "#0b0f12"
+    },
+    "reviewCaptures": [
+      ".impeccable/review/desktop-list.jpg",
+      ".impeccable/review/desktop-editor.jpg",
+      ".impeccable/review/desktop-empty.jpg",
+      ".impeccable/review/mobile-list.png",
+      ".impeccable/review/mobile-list-2.png",
+      ".impeccable/review/mobile-editor.png",
+      ".impeccable/review/mobile-editor-error.png"
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gunmetal command button for create and save.",
+      "html": "<div class=\"ds-scope\"><button class=\"ds-btn\">Save changes</button></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-btn{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;color:var(--dgw-cream);font-family:inherit;font-size:14px;font-weight:600;line-height:1;background:var(--dgw-gunmetal);border:1px solid var(--dgw-gunmetal);border-radius:10px;cursor:pointer;transition:background-color 150ms ease-out,border-color 150ms ease-out}.ds-btn:hover{background:var(--dgw-gunmetal-hover);border-color:var(--dgw-gunmetal-hover)}.ds-btn:focus-visible{outline:2px solid var(--dgw-gunmetal);outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action such as Cancel.",
+      "html": "<div class=\"ds-scope\"><button class=\"ds-btn-ghost\">Cancel</button></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-btn-ghost{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;color:var(--dgw-gunmetal);font-family:inherit;font-size:14px;font-weight:600;background:transparent;border:1px solid var(--dgw-line-strong);border-radius:10px;cursor:pointer;transition:background-color 150ms ease-out}.ds-btn-ghost:hover{background:var(--dgw-stub)}.ds-btn-ghost:focus-visible{outline:2px solid var(--dgw-gunmetal);outline-offset:2px}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Delete campaign; confirms before submitting.",
+      "html": "<div class=\"ds-scope\"><button class=\"ds-btn-danger\">Delete campaign</button></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-btn-danger{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;color:var(--dgw-red-text);font-family:inherit;font-size:14px;font-weight:600;background:var(--dgw-paper);border:1px solid var(--dgw-red);border-radius:10px;cursor:pointer;transition:background-color 150ms ease-out,color 150ms ease-out,border-color 150ms ease-out}.ds-btn-danger:hover{color:#fff;background:var(--dgw-red-text);border-color:var(--dgw-red-text)}.ds-btn-danger:focus-visible{outline:2px solid var(--dgw-gunmetal);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Labelled text input with gunmetal focus and red invalid state.",
+      "html": "<div class=\"ds-scope ds-field\"><label for=\"ds-n\">Campaign name</label><input id=\"ds-n\" class=\"ds-input\" placeholder=\"Black Friday 2026\"><label for=\"ds-e\">Campaign name</label><input id=\"ds-e\" class=\"ds-input\" aria-invalid=\"true\"><strong class=\"ds-err\">Enter a campaign name.</strong></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-field{display:grid;gap:6px;max-width:360px}.ds-field label{font-weight:600}.ds-input{min-height:42px;padding:8px 12px;color:var(--dgw-gunmetal);font:inherit;background:#fff;border:1px solid var(--dgw-line-strong);border-radius:8px}.ds-input::placeholder{color:#69717a}.ds-input:focus{border-color:var(--dgw-gunmetal);outline:none;box-shadow:0 0 0 1px var(--dgw-gunmetal)}.ds-input[aria-invalid=true]{border-color:var(--dgw-red);box-shadow:0 0 0 1px var(--dgw-red)}.ds-err{color:var(--dgw-red-text)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Gunmetal shell bar with title, purpose line and light action.",
+      "html": "<div class=\"ds-scope\"><header class=\"ds-header\"><div><h1>Discount campaigns</h1><p>Schedule store-wide or category discounts without changing saved prices.</p></div><a class=\"ds-btn-light\" href=\"#\">New campaign</a></header></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 32px;color:var(--dgw-cream);background:var(--dgw-gunmetal);border-radius:14px}.ds-header h1{margin:0;font-size:26px;font-weight:700;line-height:1.2;letter-spacing:-0.01em}.ds-header p{margin:6px 0 0;color:#c9d0d5}.ds-btn-light{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;color:var(--dgw-gunmetal);font-weight:600;text-decoration:none;background:var(--dgw-cream);border-radius:10px;transition:background-color 150ms ease-out}.ds-btn-light:hover{background:#fff}.ds-btn-light:focus-visible{outline:2px solid var(--dgw-cream);outline-offset:2px}"
+    },
+    {
+      "name": "Status Stamps",
+      "kind": "chip",
+      "refersTo": "stamp-active",
+      "description": "Uppercase square-set status labels; dashed for ended, never rotated.",
+      "html": "<div class=\"ds-scope ds-row\"><span class=\"ds-stamp ds-stamp--active\">Active</span><span class=\"ds-stamp ds-stamp--scheduled\">Scheduled</span><span class=\"ds-stamp\">Off</span><span class=\"ds-stamp ds-stamp--ended\">Ended</span></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-row{display:flex;gap:8px;flex-wrap:wrap}.ds-stamp{display:inline-flex;padding:4px 10px;color:var(--dgw-ink-soft);font-size:12px;font-weight:700;line-height:1.2;letter-spacing:0.06em;text-transform:uppercase;border:1.5px solid currentColor;border-radius:6px}.ds-stamp--active{color:var(--dgw-turquoise-text);background:var(--dgw-turquoise-soft)}.ds-stamp--scheduled{color:var(--dgw-orange-text);background:var(--dgw-orange-soft)}.ds-stamp--ended{border-style:dashed}"
+    },
+    {
+      "name": "Switch",
+      "kind": "custom",
+      "refersTo": "switch-track",
+      "description": "On/off pill; gunmetal when on, taupe when off.",
+      "html": "<div class=\"ds-scope ds-row\"><button class=\"ds-switch\" role=\"switch\" aria-checked=\"true\"><span class=\"ds-track\"><span></span></span><span class=\"ds-lab\">On</span></button><button class=\"ds-switch\" role=\"switch\" aria-checked=\"false\"><span class=\"ds-track\"><span></span></span><span class=\"ds-lab\">Off</span></button></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-row{display:flex;gap:16px}.ds-switch{display:inline-flex;align-items:center;padding:4px;background:none;border:0;border-radius:999px;cursor:pointer;font:inherit}.ds-track{position:relative;width:42px;height:24px;background:var(--dgw-switch-off);border-radius:999px;transition:background-color 150ms ease-out}.ds-track>span{position:absolute;top:3px;left:3px;width:18px;height:18px;background:#fff;border-radius:50%;box-shadow:0 1px 2px rgba(29,39,48,.3);transition:transform 150ms ease-out}.ds-switch[aria-checked=true] .ds-track{background:var(--dgw-gunmetal)}.ds-switch[aria-checked=true] .ds-track>span{transform:translateX(18px)}.ds-switch:hover .ds-track{background:#7b7262}.ds-switch[aria-checked=true]:hover .ds-track{background:var(--dgw-gunmetal-hover)}.ds-switch:focus-visible{outline:2px solid var(--dgw-gunmetal);outline-offset:2px}.ds-lab{margin-left:8px;font-weight:600}"
+    },
+    {
+      "name": "Coupon Row",
+      "kind": "card",
+      "refersTo": "coupon-row",
+      "description": "Signature campaign row: stub with percentage, dashed perforation and punched notches, schedule timeline.",
+      "html": "<div class=\"ds-scope ds-ground\"><div class=\"ds-coupon ds-coupon--active\"><div class=\"ds-stub\"><span class=\"ds-pct\">30<small>%</small></span></div><div class=\"ds-body\"><a href=\"#\">Black Friday</a><span class=\"ds-muted\">Whole store</span><span class=\"ds-tl\"><span style=\"width:60%\"></span></span><span class=\"ds-rel\">Ends in 2 days</span></div></div><div class=\"ds-coupon ds-coupon--ended\"><div class=\"ds-stub\"><span class=\"ds-pct\">15<small>%</small></span></div><div class=\"ds-body\"><a href=\"#\">Summer sale</a><span class=\"ds-muted\">Category: Shoes</span><span class=\"ds-tl\"><span style=\"width:100%\"></span></span><span class=\"ds-rel\">Ended 3 months ago</span></div></div></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-ground{display:grid;gap:10px;padding:16px;background:var(--dgw-cream)}.ds-coupon{display:grid;grid-template-columns:120px 1fr;background:var(--dgw-paper);border:1px solid var(--dgw-line);border-radius:14px}.ds-stub{position:relative;display:grid;place-items:center;padding:18px 16px;background:var(--dgw-stub);border-right:2px dashed var(--dgw-line-strong);border-radius:13px 0 0 13px}.ds-stub::before,.ds-stub::after{position:absolute;right:-9px;width:16px;height:16px;content:'';background:var(--dgw-cream);border:1px solid var(--dgw-line);border-radius:50%}.ds-stub::before{top:-9px;clip-path:inset(50% 0 0 0)}.ds-stub::after{bottom:-9px;clip-path:inset(0 0 50% 0)}.ds-pct{display:inline-flex;align-items:flex-start;font-size:34px;font-weight:800;line-height:1;letter-spacing:-0.03em}.ds-pct small{margin:3px 0 0 2px;font-size:16px;font-weight:700;letter-spacing:0}.ds-body{display:grid;gap:2px;padding:18px 16px}.ds-body a{color:var(--dgw-gunmetal);font-size:15px;font-weight:700;text-decoration:none}.ds-body a:hover{text-decoration:underline}.ds-muted,.ds-rel{color:var(--dgw-ink-soft)}.ds-rel{font-size:13px}.ds-tl{position:relative;display:block;max-width:240px;height:6px;margin:8px 0 4px;background:var(--dgw-stub);border-radius:999px}.ds-tl>span{position:absolute;inset:0 auto 0 0;background:var(--dgw-line-strong);border-radius:inherit}.ds-coupon--active .ds-stub{background:var(--dgw-turquoise);border-right-color:rgba(29,39,48,.35)}.ds-coupon--active .ds-tl>span{background:var(--dgw-turquoise)}.ds-coupon--active .ds-rel{color:var(--dgw-turquoise-text);font-weight:600}.ds-coupon--ended{background:#fbf8f2}.ds-coupon--ended .ds-pct{color:var(--dgw-ink-soft);text-decoration:line-through;text-decoration-thickness:2px}"
+    },
+    {
+      "name": "Error Banner",
+      "kind": "custom",
+      "refersTo": "feedback-error",
+      "description": "Feedback under the header; errors in blush with brick icon.",
+      "html": "<div class=\"ds-scope\"><div class=\"ds-fb\" role=\"alert\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M10 2 1 18h18L10 2zm-1 6h2v5H9V8zm0 6h2v2H9v-2z\"/></svg><p>Choose at least one category.</p></div></div>",
+      "css": ".ds-scope{--dgw-cream:#f8f3ea;--dgw-turquoise:#00aeae;--dgw-orange:#ff6b30;--dgw-red:#eb3d40;--dgw-gunmetal:#1d2730;--dgw-ink-soft:#4f5b65;--dgw-paper:#fffdf9;--dgw-stub:#f1e9db;--dgw-line:#e2d8c6;--dgw-line-strong:#cfc3ae;--dgw-gunmetal-hover:#2b3945;--dgw-turquoise-text:#00706f;--dgw-turquoise-soft:#dcf3f2;--dgw-switch-off:#8f8574;--dgw-orange-text:#ad4214;--dgw-orange-soft:#ffeadf;--dgw-red-text:#c0262a;--dgw-red-soft:#fde6e5;font:14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,sans-serif;font-variant-numeric:tabular-nums;color:#1d2730;} .ds-fb{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--dgw-red-soft);border:1px solid #f5b5b4;border-radius:12px}.ds-fb svg{flex:none;margin-top:1px;color:var(--dgw-red-text)}.ds-fb p{margin:0;color:var(--dgw-ink-soft)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Coupon Booklet",
+    "overview": "Every campaign is a coupon torn from the same booklet. The list is a stack of coupons on a cream counter, each with a stub that carries its percentage and a perforated edge with two punched notches; the editor is that same coupon opened up at full size. The percentage numeral is the single typographic hero and appears as one form at several sizes (48px in the editor, 34px in the list, 28px on narrow screens). Everything else is quiet system sans in gunmetal on cream and warm paper.\n\nThe screens live inside wp-admin beside native WooCommerce pages, so the system works with the platform instead of hiding it: the admin's own system sans, its Dashicons, and its native radios and checkboxes, retinted to gunmetal through the admin theme color. Color is a state language, not decoration. Turquoise means \"running right now\" and nothing else; orange means \"scheduled\"; red means \"error or destroy\". A manager who comes back twice a year can tell which campaign is live, which is next and which has ended without reading a word.\n\nState changes are instant steps. The only motion is a 150ms ease-out on color and the switch thumb, and it switches off entirely under reduced motion. Ended campaigns stay in the booklet, cancelled rather than removed: the numeral is struck through and the stamp goes dashed.",
+    "keyCharacteristics": [
+      "Coupon rows with a tinted stub, a 2px dashed perforation and two half-circle punched notches.",
+      "One typographic hero: the 800-weight percentage numeral, repeated at every scale.",
+      "Turquoise reserved strictly for \"active now\"; orange for scheduled; red for errors and delete.",
+      "Gunmetal carries structure and command: header shell, primary buttons, switch on, focus rings, native controls.",
+      "Flat paper on cream; borders and tint, not shadows, separate surfaces.",
+      "Rows ranked active, scheduled, off, ended; columns never move."
+    ],
+    "rules": [
+      {
+        "name": "The Live Color Rule",
+        "body": "Turquoise means \"this campaign is applying discounts right now\". It appears only on the active stub, the active timeline fill, the active relative time and the active stamp. Never use it for buttons, links, focus, success messages or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gunmetal Command Rule",
+        "body": "Anything the manager acts with (primary buttons, the switch when on, focus outlines, radios and checkboxes) is gunmetal, never a state color. State colors describe; gunmetal commands.",
+        "section": "colors"
+      },
+      {
+        "name": "The Text Step Rule",
+        "body": "Pure orange and pure red never set text on light grounds. Use their text steps; the pure hues are for fills, outlines and invalid borders.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Hero Rule",
+        "body": "The percentage numeral is the only display-weight type on the screen. Headings stay at 700 and at most 26px so the discount always wins.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Numerals are tabular everywhere, so percentages and dates line up down the booklet.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper-on-Counter Rule",
+        "body": "Surfaces separate by border and tint, never by drop shadow. If a new surface needs to stand out, give it a tan border or a kraft fill.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** reserve turquoise for the active stub, active timeline, active relative time and active stamp, and nothing else.",
+      "**Do** carry every new command (buttons, toggles, focus rings, native controls) in gunmetal, with cream on the header.",
+      "**Do** repeat the percentage numeral at 800 weight as the one hero (48px editor, 34px list, 28px at 960px and below).",
+      "**Do** set orange and red text with their text steps (#ad4214, #c0262a) and keep the pure hues for fills, outlines and invalid borders.",
+      "**Do** keep ended campaigns visible: strike the numeral through and dash the stamp border.",
+      "**Do** keep motion to 150ms ease-out on color and the switch thumb, and remove it under prefers-reduced-motion.",
+      "**Do** render errors under the header and mark the failing field with aria-invalid, a red border, an inline message and focus.",
+      "**Do** give narrow-screen switches a visible text label."
+    ],
+    "donts": [
+      "**Don't** use turquoise for success messages, links, buttons or decoration; that breaks the one live-item color.",
+      "**Don't** separate surfaces with drop shadows; use tan borders and kraft tint.",
+      "**Don't** rotate stamps or style them as playful stickers; they are square-set status labels.",
+      "**Don't** reorder table columns between states or screen sizes; rank rows instead.",
+      "**Don't** make placeholders, the off switch track or secondary text lighter than #69717a, #8f8574 and #4f5b65.",
+      "**Don't** add decorative easing, bounces or entrance animation."
+    ]
+  }
+}
